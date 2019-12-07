@@ -13,10 +13,9 @@ def Display(path,ext1,ext2):
     if exists :
         for foldername,subfolder,filname in os.walk(path):
             for filen in filname:
-                path=os.path.join(foldername,filen)
+                filen=os.path.join(foldername,filen)
                 f,exten = os.path.splitext(filen)
                 if(exten==ext1):
-                    print(path)
                     new=f+ext2
                     print(new)
                     print("File name: "+filen)
