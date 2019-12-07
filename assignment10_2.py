@@ -16,9 +16,10 @@ def Display(path,ext1,ext2):
                 filen=os.path.join(foldername,filen)
                 f,exten = os.path.splitext(filen)
                 if(exten==ext1):
+                    print("File name: "+filen)
                     new=f+ext2
                     print(new)
-                    print("File name: "+filen)
+                    
                     os.rename(filen,new)
                     print("----------------------")
                     print("")
